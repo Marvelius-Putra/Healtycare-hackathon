@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-25px"
+        android:src="@drawable/top"
+        />
+
+    <ImageButton
+        android:id="@+id/notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="45px"
+        android:src="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="@font/intersemibold"
+        android:text="Hi, USER"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/harapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hi"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="@font/interregular"
+        android:text="Semua Keluarga Anda Terlindungi (Aktif)"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+
+    <ImageView
+        android:id="@+id/menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="159dp"
+        android:src="@drawable/menu1" />
+
+    <ImageView
+        android:id="@+id/menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/harapan"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/menu1"
+        android:src="@drawable/menu2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu3"
+        android:layout_below="@id/harapan"
+        android:layout_toRightOf="@+id/menu2"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/menu3"
+        />
+
+    <ImageView
+        android:id="@+id/menu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/harapan"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/menu3"
+        android:src="@drawable/menu4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Info Program JKN"
+        android:layout_below="@id/menu1"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/text1"
+        android:layout_marginLeft="22dp"
+        />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/menu2"
+        android:layout_toRightOf="@id/text1"
+        android:text="Info Lokasi \nFaskes"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/menu3"
+        android:layout_toRightOf="@id/text2"
+        android:text="Info Ketersediaan \nTempat Tidur"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:layout_marginLeft="27dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Penambahan \nPeserta"
+        android:layout_below="@id/menu4"
+        android:layout_toRightOf="@id/text3"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/text4"
+        android:layout_marginLeft="22dp"
+        />
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu5"
+        android:layout_below="@id/menu1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/menu5"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu6"
+        android:layout_toRightOf="@+id/menu5"
+        android:layout_below="@id/menu1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/menu6"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu7"
+        android:layout_toRightOf="@+id/menu6"
+        android:layout_below="@id/menu1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/menu7"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu1"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/menu7"
+        android:src="@drawable/menu8"
+        android:id="@+id/menu8"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Info Peserta"
+        android:layout_below="@id/menu5"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/text5"
+        android:layout_marginLeft="37dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Pendaftaran \nPelayanan \n(Antrean)"
+        android:layout_below="@id/menu6"
+        android:layout_toRightOf="@id/text5"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/text6"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Konsultasi Dokter"
+        android:layout_below="@id/menu7"
+        android:layout_toRightOf="@id/text6"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/text7"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Menu Lainnya"
+        android:layout_below="@id/menu8"
+        android:layout_toRightOf="@id/text7"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/text8"
+        android:layout_marginLeft="22dp"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text6"
+        android:layout_marginTop="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iklankiri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/kanankiri" />
+
+            <ImageView
+                android:id="@+id/iklantengah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tengah" />
+
+            <ImageView
+                android:id="@+id/iklankanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/kanankiri" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pagebullet"
+        android:layout_below="@id/horizontalscroll"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pagebullet1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artikel"
+        android:fontFamily="@font/intersemibold"
+        android:textColor="@color/black"
+        android:layout_below="@id/pagebullet1"
+        android:id="@+id/artikel"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pagebullet1"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/intersemibold"
+        android:text="Lihat Semua"
+        android:textColor="@color/black"
+        android:layout_marginRight="25dp"
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalscroll2"
+        android:layout_below="@id/artikel"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/semua"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tipsehat"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gayahidup"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/berita"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/testimoni"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalscroll3"
+        android:layout_below="@id/horizontalscroll2"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artikel"
+                android:layout_marginLeft="20dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artikel"
+                android:layout_marginLeft="20dp"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ImageView
+        android:id="@+id/navbawah"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@id/horizontalscroll3"
+        android:layout_marginTop="-18dp"
+        android:src="@drawable/navbawah" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/kartupeserta"
+        android:id="@+id/kartu"
+        android:layout_toRightOf="@+id/home"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/barcode"
+        android:id="@+id/barcode"
+        android:layout_toRightOf="@+id/kartu"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/faq"
+        android:id="@+id/faq"
+        android:layout_toRightOf="@+id/barcode"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/profil"
+        android:id="@+id/profil"
+        android:layout_toRightOf="@+id/faq"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+</RelativeLayout>

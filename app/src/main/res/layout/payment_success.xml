@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations!"
+        android:fontFamily="@font/interbold"
+        android:textColor="@color/primary"
+        android:textSize="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="20dp"
+        android:id="@+id/congrats"
+        />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/congrats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/interbold"
+        android:text="Your payment\nhas been discounted!"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp5,000.00"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/payment"
+        android:id="@+id/discount"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/interbold"
+        android:textSize="36dp"
+        android:layout_marginTop="120dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="final price: "
+        android:layout_below="@id/discount"
+        android:id="@+id/finalprice"
+        android:fontFamily="@font/interbold"
+        android:textSize="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/primary"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/finalprice"
+        android:layout_below="@id/discount"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/interbold"
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:text="Rp305,000.00"
+        android:id="@+id/total"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-50dp"
+        android:src="@drawable/navbwhh" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/kartupeserta"
+        android:id="@+id/kartu"
+        android:layout_toRightOf="@+id/home"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/kartu"
+        android:src="@drawable/qr" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/checkoutcart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/faq"
+        android:id="@+id/faq"
+        android:layout_toRightOf="@+id/barcode"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/profil"
+        android:id="@+id/profil"
+        android:layout_toRightOf="@+id/faq"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="5dp"
+        />
+</RelativeLayout>
